@@ -1,0 +1,10 @@
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\PosUtilities.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\PosUtilities.pdb
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\MetroFramework.Design.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\MetroFramework.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\Utilities.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\bin\Debug\Utilities.pdb
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\obj\Debug\PosUtilities.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\obj\Debug\PosUtilities.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\PosUtilities\obj\Debug\PosUtilities.pdb

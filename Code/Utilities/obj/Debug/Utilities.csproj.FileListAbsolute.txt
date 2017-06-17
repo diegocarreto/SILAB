@@ -1,0 +1,7 @@
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\bin\Debug\Utilities.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\bin\Debug\Utilities.pdb
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\bin\Debug\MetroFramework.Design.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\bin\Debug\MetroFramework.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\obj\Debug\Utilities.dll
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Code\Utilities\obj\Debug\Utilities.pdb

@@ -1,0 +1,11 @@
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\bin\Debug\Activador.exe.config
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\bin\Debug\Activador.exe
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\bin\Debug\Activador.pdb
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\obj\Debug\Activador.Form1.resources
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\obj\Debug\Activador.Properties.Resources.resources
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\obj\Debug\Activador.csproj.GenerateResource.Cache
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\obj\Debug\Activador.exe
+C:\Users\acer\Documents\Nuevos proyectos\SICAP\Activador\Activador\Activador\obj\Debug\Activador.pdb
+C:\Users\acer\Documents\Nuevos proyectos\LAB\Activador\Activador\Activador\bin\Debug\Activador.exe.config
+C:\Users\acer\Documents\Nuevos proyectos\LAB\Activador\Activador\Activador\obj\Debug\Activador.exe
+C:\Users\acer\Documents\Nuevos proyectos\LAB\Activador\Activador\Activador\obj\Debug\Activador.pdb

@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6F5C5F3-8910-4E9D-A91F-65D2D48EA5C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sicap.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Referencias\Biometrico\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Referencias\Biometrico\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Referencias\Biometrico\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calle.Designer.cs">
+      <DependentUpon>Calle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalleList.Designer.cs">
+      <DependentUpon>CalleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concentrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Concentrado.Designer.cs">
+      <DependentUpon>Concentrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackUp.Designer.cs">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinnacleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinnacleList.Designer.cs">
+      <DependentUpon>BinnacleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchOfficeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchOfficeList.Designer.cs">
+      <DependentUpon>BranchOfficeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchOfficeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchOfficeEdit.Designer.cs">
+      <DependentUpon>BranchOfficeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaList.Designer.cs">
+      <DependentUpon>AreaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProviderEdit.Designer.cs">
+      <DependentUpon>ProviderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProviderList.Designer.cs">
+      <DependentUpon>ProviderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFingerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFingerEdit.Designer.cs">
+      <DependentUpon>UserFingerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewImage.Designer.cs">
+      <DependentUpon>ViewImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleEdit.Designer.cs">
+      <DependentUpon>RoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleList.Designer.cs">
+      <DependentUpon>RoleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image.Designer.cs">
+      <DependentUpon>Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pager.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Pager.Designer.cs">
+      <DependentUpon>Pager.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentYear.Designer.cs">
+      <DependentUpon>PaymentYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HabitantFaena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HabitantFaena.Designer.cs">
+      <DependentUpon>HabitantFaena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HabitantFaenasList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HabitantFaenasList.Designer.cs">
+      <DependentUpon>HabitantFaenasList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faena.Designer.cs">
+      <DependentUpon>Faena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaenasList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaenasList.Designer.cs">
+      <DependentUpon>FaenasList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputOutputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputOutputs.Designer.cs">
+      <DependentUpon>InputOutputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputOutputsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputOutputsList.Designer.cs">
+      <DependentUpon>InputOutputsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Habitant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Habitant.Designer.cs">
+      <DependentUpon>Habitant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentList.Designer.cs">
+      <DependentUpon>PaymentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HabitantList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HabitantList.Designer.cs">
+      <DependentUpon>HabitantList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sicap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sicap.Designer.cs">
+      <DependentUpon>Sicap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="WaterIntake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterIntake.Designer.cs">
+      <DependentUpon>WaterIntake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterIntakeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterIntakeList.Designer.cs">
+      <DependentUpon>WaterIntakeList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calle.resx">
+      <DependentUpon>Calle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalleList.resx">
+      <DependentUpon>CalleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Concentrado.resx">
+      <DependentUpon>Concentrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackUp.resx">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinnacleList.resx">
+      <DependentUpon>BinnacleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchOfficeList.resx">
+      <DependentUpon>BranchOfficeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchOfficeEdit.resx">
+      <DependentUpon>BranchOfficeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaList.resx">
+      <DependentUpon>AreaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProviderEdit.resx">
+      <DependentUpon>ProviderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProviderList.resx">
+      <DependentUpon>ProviderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFingerEdit.resx">
+      <DependentUpon>UserFingerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewImage.resx">
+      <DependentUpon>ViewImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleEdit.resx">
+      <DependentUpon>RoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleList.resx">
+      <DependentUpon>RoleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image.resx">
+      <DependentUpon>Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentYear.resx">
+      <DependentUpon>PaymentYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HabitantFaena.resx">
+      <DependentUpon>HabitantFaena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HabitantFaenasList.resx">
+      <DependentUpon>HabitantFaenasList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faena.resx">
+      <DependentUpon>Faena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaenasList.resx">
+      <DependentUpon>FaenasList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputOutputs.resx">
+      <DependentUpon>InputOutputs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputOutputsList.resx">
+      <DependentUpon>InputOutputsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habitant.resx">
+      <DependentUpon>Habitant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentList.resx">
+      <DependentUpon>PaymentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HabitantList.resx">
+      <DependentUpon>HabitantList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sicap.resx">
+      <DependentUpon>Sicap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterIntake.resx">
+      <DependentUpon>WaterIntake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterIntakeList.resx">
+      <DependentUpon>WaterIntakeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sicap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\PosBusiness\PosBusiness.csproj">
+      <Project>{7169f933-db77-4ea9-b0af-bb64d19f0936}</Project>
+      <Name>PosBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilitiesForm\UtilitiesForm.csproj">
+      <Project>{904327fd-014d-4f13-aa69-2b3caf6b2643}</Project>
+      <Name>UtilitiesForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{175fb569-1c14-4ecd-b19f-b47eb588bd0c}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
